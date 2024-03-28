@@ -1,4 +1,4 @@
-# Isometric_regularization
+# Isometric Regularization of Deep Generative Models for Functional Data
 Additional experimental results for ICML2024 rebuttal #2803
 
 ## 1. 2D Circles 
