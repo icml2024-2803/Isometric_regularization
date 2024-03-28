@@ -30,12 +30,13 @@ Additional experimental results for ICML2024 rebuttal #2803
   
 ### Average errors
 
+- MSE(multiplied by 1e4) between SDF samples from interpolated latent codes and GT SDF.
+
 | Model        | Average error           |
 | ------------- |:-------------:|
 | MLP | 2.2159 |
 | IsoMLP (uniform)      | 0.3615      |
 | IsoMLP (near-surface) | 0.4310      |
 
-We computed MSE(multiplied by 1e4) between SDF samples from interpolated latent codes and GT SDF.
 
 ## 2. 3D Box, Cone, Cylinder
