@@ -2,7 +2,7 @@
 Additional experimental results for ICML2024 rebuttal #2803
 
 ## 1. 2D Circles 
->radius of circles r=linspace(0.1, 0.5, 20), MLP dimensions=(4, 128, 128, 128, 1), isometric regularization weight=1
+>radius of circles r=linspace(0.1, 0.5, 20), MLP dimensions=(4, 128, 128, 128, 128, 1), isometric regularization weight=1
 
 - We utilized two sampling schemes for the probability density function p(x; F_z): 1. uniform sampling 2. near-surface sampling 
 
