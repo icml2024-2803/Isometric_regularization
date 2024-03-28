@@ -2,7 +2,7 @@
 Additional experimental results for ICML2024 rebuttal #2803
 
 ## 1. 2D Circles 
->radius of circles r=linspace(0.1, 0.5, 20), MLP dimensions=(4, 128, 128, 128, 128, 1), isometric regularization weight=1
+>radius of circles r=linspace(0.1, 0.5, 20), MLP dimensions=(4, 128, 128, 128, 128, 1), isometric weight=1 for every epoch
 
 - We utilized two sampling schemes for the probability density function p(x; F_z): 1. uniform sampling 2. near-surface sampling 
 
@@ -40,15 +40,28 @@ Additional experimental results for ICML2024 rebuttal #2803
 
 
 ## 2. 3D Box, Cone, Cylinder
->Box: (l_x, l_y)=meshgrid(linspace(0.5, 1.2, 10),linspace(0.5, 1.2, 10)) l_z=1,  Cone&Cylinder: r=linspace(0.8,0.4,100) h=1.2-r
+>Box: (l_x, l_y)=meshgrid(linspace(0.5, 1.2, 10),linspace(0.5, 1.2, 10)), l_z=1,
+>Cone&Cylinder: r=linspace(0.8,0.4,100), h=1.2-r, 
 >MLP dimensions=(5, 256, 256, 256, 1)
 
 - We trained 300 shapes with 3D shapes (Box, Cone, Cylinder) in a 2-dimensional latent space.
 - We utilized three sampling schemes for the probability density function p(x; F_z):
-1. uniform sampling
-2. half uniform sampling, half near_surface sampling
-3. near-surface sampling 
+  1. uniform sampling
+  2. hybrid sampling (half uniform sampling + half near_surface sampling)
+  3. near-surface sampling 
 - We utilized [Pointnet Encoder](https://github.com/qinglew/PCN-PyTorch) with randomly initialized network parameters and no training to initialize latent codes.
 <img width="31.8%" src="./images/2/initial_latent_space.png"/>
 
 ### Latent Space
+- Analysis on sampling scheme
+  > isometric weight=10 for every epoch
+<center>
+<div class="imgCollage">
+<span style="width: 24%"><img src="./images/2/mlp_latent_space.png" height="180"/></span>
+<span style="width: 24%"><img src="./images/2/iso_0.0_10_latent_space.png" height="180"/> </span>
+<span style="width: 24%"><img src="./images/2/iso_0.5_10_latent_space.png" height="180"/> </span>
+<span style="width: 24%"><img src="./images/2/iso_1.0_10_latent_space.png" height="180"/> </span>
+</div>
+  <I>Figure 3: Latent space obtained by <b>(First)</b> MLP, <b>(Second)</b> IsoMLP with uniform sampling, <b>(Third)</b> IsoMLP with hybrid sampling, and <b>(Last)</b> IsoMLP with near-surface sampling. Our method encourages the latent space to satisfy isometry, connecting the orange lines disconnected in MLP and changing the blue parallelogram closer to a square. Near-surface sampling fails, as spatial points are sampled from different regions and they barely overlap.</I>
+</center>
+<br>
