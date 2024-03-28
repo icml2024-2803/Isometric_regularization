@@ -8,9 +8,9 @@ We trained twenty 2D circles on 2-dimensional latent space.
 ### Latent Space
 <center>
 <div class="imgCollage">
-<span style="width: 31.8%"><img src="./images/1/mlp_latent_space.png"/></span>
-<span style="width: 31.8%"><img src="./images/1/iso_latent_space_0.png"/> </span>
-<span style="width: 31.8%"><img src="./images/1/iso_latent_space_1.png"/> </span>
+<span style="width: 25%"><img src="./images/1/mlp_latent_space.png"/></span>
+<span style="width: 25%"><img src="./images/1/iso_latent_space_0.png"/> </span>
+<span style="width: 25%"><img src="./images/1/iso_latent_space_1.png"/> </span>
 </div>
   <I>Figure 1: <b>(Left)</b> Distorted Latent Space obtained by MLP, <b>(Middle)</b> Latent Space with small curvature obtained by IsoMLP with uniform sampling, and <b>(Right)</b> Latent Space obtained by IsoMLP with near-surface sampling. </I>
 </center>
@@ -25,7 +25,8 @@ We trained twenty 2D circles on 2-dimensional latent space.
 </div>
   
 -Average errors
->We computed MSE(multiplied by 1e4) between SDF samples from interpolated latent codes and GT SDF. 
+>We computed MSE(multiplied by 1e4) between SDF samples from interpolated latent codes and GT SDF.
+
 | Model        | Average error           |
 | ------------- |:-------------:|
 | MLP | 2.2159 |
