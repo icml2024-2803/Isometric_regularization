@@ -62,7 +62,7 @@ Additional experimental results for ICML2024 rebuttal #2803
 <span style="width: 24%"><img src="./images/2/iso_0.5_10_latent_space.png" height="180"/> </span>
 <span style="width: 24%"><img src="./images/2/iso_1.0_10_latent_space.png" height="180"/> </span>
 </div>
-  <I>Figure 3: Latent space obtained by <b>(First)</b> MLP, <b>(Second)</b> IsoMLP with uniform sampling, <b>(Third)</b> IsoMLP with hybrid sampling, and <b>(Last)</b> IsoMLP with near-surface sampling. Our method encourages the latent space to satisfy isometry, connecting the orange lines disconnected in MLP and changing the blue parallelogram closer to a square. Near-surface sampling fails, as spatial points are sampled from different regions and they barely overlap.</I>
+  <I>Figure 3: Latent space obtained by <b>(First)</b> MLP, <b>(Second)</b> IsoMLP with uniform sampling, <b>(Third)</b> IsoMLP with hybrid sampling, and <b>(Last)</b> IsoMLP with near-surface sampling. Our method encourages the latent space to satisfy isometry, connecting the orange lines disconnected in MLP and changing the blue parallelogram closer to a square. Near-surface sampling fails since spatial points are sampled from different regions on different shapes, and they barely overlap.</I>
 </center>
 <br>
 
