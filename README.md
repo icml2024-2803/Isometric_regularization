@@ -65,3 +65,15 @@ Additional experimental results for ICML2024 rebuttal #2803
   <I>Figure 3: Latent space obtained by <b>(First)</b> MLP, <b>(Second)</b> IsoMLP with uniform sampling, <b>(Third)</b> IsoMLP with hybrid sampling, and <b>(Last)</b> IsoMLP with near-surface sampling. Our method encourages the latent space to satisfy isometry, connecting the orange lines disconnected in MLP and changing the blue parallelogram closer to a square. Near-surface sampling fails, as spatial points are sampled from different regions and they barely overlap.</I>
 </center>
 <br>
+
+- Analysis on isometric weight
+  > hybrid sampling
+<center>
+<div class="imgCollage">
+<span style="width: 24%"><img src="./images/2/iso_0.5_1_latent_space.png" height="180"/> </span>
+<span style="width: 24%"><img src="./images/2/iso_0.5_10_latent_space.png" height="180"/> </span>
+<span style="width: 24%"><img src="./images/2/iso_0.5_100_latent_space.png" height="180"/> </span>
+</div>
+  <I>Figure 4: Latent space obtained by <b>(First)</b> isometric weight=1, <b>(Second)</b> isometric weight=10, and <b>(Third)</b> isometric weight=100. </I>
+</center>
+<br>
