@@ -28,7 +28,7 @@ Additional experimental results for ICML2024 rebuttal #2803
 </center>
 <br>
   
-### Average errors
+### Average Errors
 
 - MSE(multiplied by 1e4) between SDF samples from interpolated latent codes and GT SDF.
 
@@ -40,3 +40,15 @@ Additional experimental results for ICML2024 rebuttal #2803
 
 
 ## 2. 3D Box, Cone, Cylinder
+>Box: (l_x, l_y)=meshgrid(linspace(0.5, 1.2, 10),linspace(0.5, 1.2, 10)) l_z=1,  Cone&Cylinder: r=linspace(0.8,0.4,100) h=1.2-r
+>MLP dimensions=(5, 256, 256, 256, 1)
+
+- We trained 300 shapes with 3D shapes (Box, Cone, Cylinder) in a 2-dimensional latent space.
+- We utilized three sampling schemes for the probability density function p(x; F_z):
+1. uniform sampling
+2. half uniform sampling, half near_surface sampling
+3. near-surface sampling 
+- We utilized [Pointnet Encoder](https://github.com/qinglew/PCN-PyTorch) with randomly initialized network parameters and no training to initialize latent codes.
+<img width="90%" src="./images/2/initial_latent_space.png"/>
+
+### Latent Space
