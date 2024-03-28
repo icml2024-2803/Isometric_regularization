@@ -24,8 +24,11 @@ Additional experimental results for ICML2024 rebuttal #2803
 <span style="width: 31.8%"><img src="./images/1/iso_interp_0.png"/> </span>
 <span style="width: 31.8%"><img src="./images/1/iso_interp_1.png"/> </span>
 </div>
+  <I>Figure 2: <b>(Up)</b> Interpolated results obtained by MLP, <b>(Middle)</b> Interpolated results obtained by IsoMLP with uniform sampling, and <b>(Bottom)</b> Interpolated results obtained by IsoMLP with near-surface ampling. We computed MSE(multiplied by 1e4) between gt sdf and sdf samples from 128*128 grid. </I>
+</center>
+<br>
   
-- Average errors
+### Average errors
 
 | Model        | Average error           |
 | ------------- |:-------------:|
@@ -33,6 +36,6 @@ Additional experimental results for ICML2024 rebuttal #2803
 | IsoMLP (uniform)      | 0.3615      |
 | IsoMLP (near-surface) | 0.4310      |
 
->We computed MSE(multiplied by 1e4) between SDF samples from interpolated latent codes and GT SDF.
+We computed MSE(multiplied by 1e4) between SDF samples from interpolated latent codes and GT SDF.
 
 ## 2. 3D Box, Cone, Cylinder
