@@ -53,7 +53,7 @@ Additional experimental results for ICML2024 rebuttal #2803
 <img width="31.8%" src="./images/2/initial_latent_space.png"/>
 
 ### Latent Space
-- Analysis on sampling scheme
+#### Analysis on sampling scheme
   > isometric weight=10 for every epoch
 <center>
 <div class="imgCollage">
@@ -66,7 +66,7 @@ Additional experimental results for ICML2024 rebuttal #2803
 </center>
 <br>
 
-- Analysis on isometric weight
+#### Analysis on isometric weight
   > hybrid sampling
 <center>
 <div class="imgCollage">
