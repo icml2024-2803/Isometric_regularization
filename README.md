@@ -49,6 +49,6 @@ Additional experimental results for ICML2024 rebuttal #2803
 2. half uniform sampling, half near_surface sampling
 3. near-surface sampling 
 - We utilized [Pointnet Encoder](https://github.com/qinglew/PCN-PyTorch) with randomly initialized network parameters and no training to initialize latent codes.
-<img width="90%" src="./images/2/initial_latent_space.png"/>
+<img width="31.8%" src="./images/2/initial_latent_space.png"/>
 
 ### Latent Space
